@@ -1,0 +1,45 @@
+{
+  "name": "express-fileupload-cloudinary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node app.js",
+    "start:dev": "nodemon --exec babel-node src/app.js",
+    "migrate": "babel-node ./src/models",
+    "test": "cross-env NODE_ENV=test npm run migrate && cross-env NODE_ENV=test mocha --no-timeout ./src/tests/*.js --require @babel/register --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danoseun/node-express-fileupload-cloudinary.git"
+  },
+  "author": "oluwaseun somefun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danoseun/node-express-fileupload-cloudinary/issues"
+  },
+  "homepage": "https://github.com/danoseun/node-express-fileupload-cloudinary#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cloudinary": "^1.22.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.4",
+    "fs-extra": "^9.0.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "path": "^0.12.7",
+    "pg": "^8.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/register": "^7.10.5",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "cross-env": "^7.0.2",
+    "mocha": "^8.1.1"
+  }
+}
