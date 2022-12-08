@@ -20,10 +20,10 @@
   },
   "homepage": "https://github.com/danoseun/node-express-fileupload-cloudinary#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.1",
     "cloudinary": "^1.22.0",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "express-fileupload": "^1.1.7-alpha.4",
     "fs-extra": "^9.0.1",
     "morgan": "^1.10.0",
